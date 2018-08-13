@@ -1,0 +1,109 @@
+body {
+  font-family: 'Roboto', sans-serif; }
+
+body.index {
+  background-image: url(../images/bg_2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; }
+  body.index > .container {
+    min-height: 100vh; }
+    body.index > .container > .row {
+      min-height: inherit; }
+  body.index .text {
+    letter-spacing: 4px;
+    font-size: 30px; }
+  body.index *:focus {
+    box-shadow: none !important; }
+  body.index form .input-group {
+    margin: 20px 0; }
+    body.index form .input-group input {
+      letter-spacing: 2px;
+      border: 0;
+      background: transparent !important;
+      border-bottom: 1px solid #aca8b3;
+      border-bottom-left-radius: 1px;
+      border-bottom-right-radius: 1px;
+      padding: 5px;
+      font-size: 14px !important;
+      color: #f8f9fa !important;
+      letter-spacing: 2px;
+      transition: all 0.2s ease-in-out; }
+      body.index form .input-group input::placeholder {
+        font-size: 14px !important;
+        font-size: 14px !important;
+        letter-spacing: 2px;
+        color: #dae0e5; }
+      body.index form .input-group input.active, body.index form .input-group input:hover, body.index form .input-group input.btn:hover {
+        border-color: #c6c3cb;
+        padding: 5px 10px; }
+        body.index form .input-group input.active::placeholder, body.index form .input-group input:hover::placeholder, body.index form .input-group input.btn:hover::placeholder {
+          color: #fff; }
+    body.index form .input-group .btn {
+      background-color: #fff !important;
+      border-radius: 40px;
+      color: #aa6b78;
+      transition: all 0.2s ease-in-out;
+      font-size: 14px !important;
+      letter-spacing: 1px; }
+      body.index form .input-group .btn.active, body.index form .input-group .btn:hover {
+        color: #343a40; }
+
+body.index2 {
+  background-color: #3a14b1;
+  background-image: url(../images/illustration.png), url("../images/left.png"), url("../images/right.png");
+  background-size: 50%, 25% 100%, 25%, 25%;
+  background-attachment: fixed;
+  background-position: right, left, right;
+  background-repeat: no-repeat; }
+  @media only screen and (max-width: 768px) {
+    body.index2 {
+      background-image: none, url("../images/left.png"), url("../images/right.png");
+      background-size: auto, 50%, 25%; } }
+  body.index2 > .container {
+    min-height: 100vh; }
+    body.index2 > .container > .row {
+      min-height: inherit; }
+  body.index2 .text {
+    letter-spacing: 4px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.9); }
+  body.index2 *:focus {
+    box-shadow: none !important; }
+  body.index2 form .input-group {
+    margin: 20px 0; }
+    body.index2 form .input-group input {
+      letter-spacing: 2px;
+      border: 0;
+      background: transparent !important;
+      border-bottom: 1px solid #aca8b3;
+      border-bottom-left-radius: 1px;
+      border-bottom-right-radius: 1px;
+      padding: 5px;
+      font-size: 14px !important;
+      color: #f8f9fa !important;
+      letter-spacing: 2px;
+      transition: all 0.2s ease-in-out; }
+      body.index2 form .input-group input::placeholder {
+        font-size: 14px !important;
+        font-size: 14px !important;
+        letter-spacing: 2px;
+        color: #dae0e5; }
+      body.index2 form .input-group input.active, body.index2 form .input-group input:hover, body.index2 form .input-group input.btn:hover {
+        border-color: #c6c3cb;
+        padding: 5px 10px; }
+        body.index2 form .input-group input.active::placeholder, body.index2 form .input-group input:hover::placeholder, body.index2 form .input-group input.btn:hover::placeholder {
+          color: #fff; }
+    body.index2 form .input-group .btn {
+      background-color: #4cb7fe !important;
+      border-radius: 40px;
+      color: #f8f9fa;
+      transition: all 0.2s ease-in-out;
+      font-size: 12px !important;
+      letter-spacing: 1px;
+      font-weight: semi-bold; }
+      body.index2 form .input-group .btn.active, body.index2 form .input-group .btn:hover {
+        color: #fff; }
+
+/*# sourceMappingURL=style.css.map */

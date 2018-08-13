@@ -1,0 +1,183 @@
+
+@import './bootstrap/functions';
+@import './bootstrap/variables';
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+body.index{
+    background-image: url(../images/bg_2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    >.container{
+        min-height: 100vh;
+
+        >.row{
+            min-height: inherit;
+        }
+    }
+
+    .text{
+        letter-spacing: 4px;
+        font-size: 30px;
+    }
+
+    *:focus{
+        box-shadow: none !important;
+    }
+    
+    form{
+        .input-group{
+            margin: 20px 0;
+            
+            input{
+                letter-spacing: 2px;
+                border: 0;
+                background: transparent !important;
+                border-bottom: 1px solid #aca8b3;
+                border-bottom-left-radius: 1px;
+                border-bottom-right-radius: 1px;
+                padding: 5px;
+                font-size: 14px !important;
+                color: $light !important;
+                letter-spacing: 2px;
+
+                &::placeholder{
+                    font-size: 14px !important;
+                    font-size: 14px !important;
+                    letter-spacing: 2px;
+                    color: darken($light, 10%);
+                }
+                transition: $transition-base;
+
+                &.active{
+                    border-color: lighten(#aca8b3, 10%);
+                    padding: 5px 10px;
+
+                    &::placeholder{
+                        color: $white;
+                    }
+                }
+
+                &:hover{
+                    @extend .active;
+                }
+            }
+
+            .btn{
+                background-color: $white !important;
+                border-radius: 40px;
+                color: #aa6b78;
+                transition: $transition-base;
+
+                font-size: 14px !important;
+                letter-spacing: 1px;
+
+                &.active{
+                    color: $dark;
+                    // transform: scale(1.1);
+                }
+
+                &:hover{
+                    @extend .active;
+                }
+            }
+        }
+    }
+}
+
+body.index2{
+    background-color: #3a14b1;
+    background-image: url(../images/illustration.png), url('../images/left.png'), url('../images/right.png');
+    background-size: 50%, 25% 100%, 25%, 25%;
+    background-attachment: fixed;
+    background-position: right, left, right;
+    background-repeat: no-repeat;
+
+    @media only screen and (max-width: $md){
+        background-image:none,  url('../images/left.png'), url('../images/right.png');
+        background-size: auto, 50%, 25%;
+    }
+    
+    >.container{
+        min-height: 100vh;
+
+        >.row{
+            min-height: inherit;
+        }
+    }
+
+    .text{
+        letter-spacing: 4px;
+        font-size: 30px;
+        color: rgba(lighten(#3a14b1, 100%), 0.9);
+    }
+
+    *:focus{
+        box-shadow: none !important;
+    }
+    
+    form{
+        .input-group{
+            margin: 20px 0;
+            
+            input{
+                letter-spacing: 2px;
+                border: 0;
+                background: transparent !important;
+                border-bottom: 1px solid #aca8b3;
+                border-bottom-left-radius: 1px;
+                border-bottom-right-radius: 1px;
+                padding: 5px;
+                font-size: 14px !important;
+                color: $light !important;
+                letter-spacing: 2px;
+
+                &::placeholder{
+                    font-size: 14px !important;
+                    font-size: 14px !important;
+                    letter-spacing: 2px;
+                    color: darken($light, 10%);
+                }
+                transition: $transition-base;
+
+                &.active{
+                    border-color: lighten(#aca8b3, 10%);
+                    padding: 5px 10px;
+
+                    &::placeholder{
+                        color: $white;
+                    }
+                }
+
+                &:hover{
+                    @extend .active;
+                }
+            }
+
+            .btn{
+                background-color:#4cb7fe !important;
+                border-radius: 40px;
+                color: $light;;
+                transition: $transition-base;
+
+                font-size: 12px !important;
+                letter-spacing: 1px;
+                font-weight: semi-bold;
+
+                &.active{
+                    color: $white;
+                    // transform: scale(1.1);
+                }
+
+                &:hover{
+                    @extend .active;
+                }
+            }
+        }
+    }
+}
