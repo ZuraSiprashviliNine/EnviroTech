@@ -6,6 +6,30 @@
     padding: 4rem 0;
 }
 
+#video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;;
+    background-color: $purple;
+    display: none;
+
+    video{
+        max-width: 80%;
+        margin: 0 auto;
+        min-width: 50%;
+    }
+
+    #exit_video{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        background: transparent;
+    }
+}
+
 #navigation_side{
     position: fixed;
     top: 0;

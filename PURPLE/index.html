@@ -289,7 +289,7 @@
                             <div class="v-item h-100">
                                 <img src="https://news.bitcoin.com/wp-content/uploads/2017/02/Bitcoin-Freelance-Marketplace-Rein-Launches-in-Beta.png" class="w-100" alt="">
                                 <div class="cover d-flex flex-column justify-content-center align-items-center">
-                                    <div class="play text-white">
+                                    <div class="play video text-white">
                                         <span class="fa fa-play"></span>
                                     </div>
                                 </div>
@@ -299,7 +299,7 @@
                             <div class="v-item h-100">
                                 <img src="https://news.bitcoin.com/wp-content/uploads/2017/02/Bitcoin-Freelance-Marketplace-Rein-Launches-in-Beta.png" class="w-100" alt="">
                                 <div class="cover d-flex flex-column justify-content-center align-items-center">
-                                    <div class="play text-white">
+                                    <div data-src="https://www.w3schools.com/html/mov_bbb.mp4" class="play video text-white">
                                         <span class="fa fa-play"></span>
                                     </div>
                                 </div>
@@ -583,6 +583,18 @@
         </div>
     </footer>
 
+    <div id="video">
+        <div class="text-light h-100 d-flex flex-row align-items-center justify-content-center">
+            <video autoplay controls src="https://www.w3schools.com/html/mov_bbb.mp4">
+            </video>
+        </div>
+        <button class="btn bg-transaprent text-white" id="exit_video">
+            <h2 class="m-0">
+                <span class="fa fa-times"></span>
+            </h2>
+        </button>
+    </div>
+
     <script>
         $(document).ready(() => {
             var swiper = new Swiper('.swiper-container', {
@@ -616,6 +628,22 @@
                     clicked = false;
                 }
             });
+
+            $('#exit_video').click(function(){
+                $('#video').fadeOut();
+            });
+
+            $('.play.video').click(function(){
+                let url = '';
+                if($(this).hasClass('play')){
+                    url = $(this).data('src');
+                }else{
+                    url = $(this).parent().data('src');
+                }
+                $('#video').find('video').attr('src', url);
+                $('#video').fadeIn();
+            })
+            
         });
     </script>
 </body>
