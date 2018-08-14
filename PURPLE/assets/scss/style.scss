@@ -1,0 +1,159 @@
+
+@import './bootstrap/functions';
+@import './bootstrap/variables';
+
+.block{
+    padding: 4rem 0;
+}
+
+header{
+    background-image: url(../images/header.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.videos{
+    .v-item{
+        position: relative;
+        .cover{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color:rgba($purple, 0.3);
+            transition: $transition-base;
+
+            .play{
+                width: 80px;
+                height: 80px;
+                background-color: rgba($purple, 0.3);
+                cursor: pointer;
+                border: 2px solid $white;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 80px;
+                transition: $transition-base;
+
+                span{
+                    font-size: 25px;
+                }
+
+
+                &:hover{
+                    transform: scale(1.2);
+                }
+
+            }
+
+            &:hover{
+                background-color: rgba($purple, 0.1);
+            }
+        }
+    }
+}
+
+.pops{
+    .item{
+        border-radius: 20px;
+        color: $light;
+        .image{
+            img{
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+        }
+        .info{
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .title{
+            position: relative;
+
+            .price{
+                position: absolute;
+                top: 0;
+                right: -2rem;;
+                bottom: auto;
+                margin: auto;
+                left: auto;
+
+                @media only screen and (max-width: $sm){
+                    position: initial;
+                    background-color: rgba($danger, 0.9) !important;
+                    float: right;
+                    padding: 5px;
+                    margin: 10px !important;
+                }
+            }
+        }
+    }
+}
+
+.people{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../images/people.png);
+    background-attachment: fixed;
+
+    .t{
+        border-color: rgba($light, 0.3) !important;
+        color: rgba($light, 0.9);
+        border-radius: 20px;
+        background-color: rgba($purple, 0.3);
+    }
+}
+
+.pre-footer{
+    .mayblog{
+        .image{
+            position: relative;
+
+            .cover{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba($purple, 0.3);
+                transition: $transition-base;
+
+                &:hover{
+                    background-color: rgba($purple, 0);
+                }
+            }
+        }
+    }
+
+    .testos{
+        .avatar{
+            img{
+                border-radius: 50%;
+                border: 2px solid $purple;
+
+                @media only screen and (max-width: $md){
+                    border-radius: 0;
+                }
+            }
+        }
+        .info{
+            >div{
+                background-color: #8455e1;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+footer{
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-image: url(../images/footer.png);
+    background-size: cover;
+    >.block{
+        background-color: rgba($purple, 0.9);
+    }
+}
