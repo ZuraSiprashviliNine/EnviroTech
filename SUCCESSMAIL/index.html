@@ -16,88 +16,25 @@
             padding: 0;
             font-family: 'Roboto', sans-serif;
         }
-        .main_table{
-            width: 100%;
-            border: 0;
-        }
-
-        .footer{
-            background-image: url(https://image.ibb.co/nuai6U/zus1_05.png);
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-            text-align: center;
-            padding: 10px;
-        }
-
-        .footer a{
-            width: 60px;
-            height: 60px;
-            padding: 5px;
-            display: inline-block;
-        }
-        .footer a img{
-            width: 60px;
-            height: 55px;;
-            transition: 0.5s;
-        }
-
-        .footer a:hover img{
-            transform: scale(0.9);
-        }
-
-        .coll{
-            width: 80%;
-            margin-left: 10%;
-        }
-        
-        .content_table{
-            margin-top: 50px;
-            margin-bottom: 50px;
-            border: 0;
-            line-height: 2;
-        }
-
-        .wut{
-            margin: 50px 10px;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-image: url(https://image.ibb.co/djai6U/zus1_04.png);
-            border-radius: 40px;
-            color: white;
-            padding: 10px 20px;
-            font-weight: bold;
-            font-size: 22px;
-            text-transform: uppercase;
-            text-align: center;
-        }
-
-        .user{
-            margin-top: -150px;
-            width: 300px;
-            height: 280px;
-            margin-left: 50px;
-            margin-bottom: -50px;
-        }
-
         @media only screen and (max-width: 768px){
 
             .coll{
-                width: 95%;
-                margin-left: 2.5%;
+                width: 95% !important;
+                margin-left: 2.5% !important;
             }
             
             .user{
-                width: 100%;
-                height: auto;
-                margin: auto;
+                width: 200px !important;
             }
         }
         
     </style>
 
     <table
+        style="
+        width: 80%;
+        margin-left: 10%;
+        border: 0;"
         class="main_table coll">
         <tr>
             <td>
@@ -106,10 +43,21 @@
         </tr>
         <tr>
             <td>
-                <table class="content_table coll">
+                <table class="content_table coll" style="
+                width: 80%;
+                margin-left: 10%;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                border: 0;
+                line-height: 2;">
                     <tr>
                         <td>
-                            <img class="user" src="https://preview.ibb.co/eDbRt9/zus1_01.png"  alt="">
+                            <img class="user" style="
+                            margin-top: -150px;
+                            width: 300px;
+                            height: 280px;
+                            margin-left: 50px;
+                            margin-bottom: -50px;" src="https://preview.ibb.co/eDbRt9/zus1_01.png"  alt="">
                         </td>
                     </tr>
                     <tr>
@@ -131,7 +79,19 @@
                     </tr>
                     <tr>
                         <td>
-                            <div class="wut">
+                            <div class="wut" style="
+                            margin: 50px 10px;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-image: url(https://image.ibb.co/djai6U/zus1_04.png);
+                            border-radius: 40px;
+                            color: white;
+                            padding: 10px 20px;
+                            font-weight: bold;
+                            font-size: 22px;
+                            text-transform: uppercase;
+                            text-align: center;">
                                     MAKE YOUR OWN SUCCESS STORY
                             </div>
                         </td>
@@ -156,15 +116,47 @@
         <tr>
             <td>
                 <div
-                class="footer">
-                    <a href="#">
-                        <img src="https://image.ibb.co/iX6qmU/zus1_06.png" alt="">
+                class="footer"
+                style="
+                background-image: url(https://image.ibb.co/nuai6U/zus1_05.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                text-align: center;
+                padding: 10px;">
+                    <a href="#" 
+                    
+                        style="
+                        width: 60px;
+                        height: 60px;
+                        padding: 5px;
+                        display: inline-block;">
+                        <img style="
+                        width: 60px;
+                        height: 55px;;
+                        transition: 0.5s;" src="https://image.ibb.co/iX6qmU/zus1_06.png" alt="">
                     </a>
-                    <a href="#">
-                        <img src="https://image.ibb.co/epv5Lp/zus1_07.png" alt="" class="">
+                    <a href="#"
+                        style="
+                        width: 60px;
+                        height: 60px;
+                        padding: 5px;
+                        display: inline-block;">
+                        <img style="
+                        width: 60px;
+                        height: 55px;;
+                        transition: 0.5s;" width="60p" height="55px" src="https://image.ibb.co/epv5Lp/zus1_07.png" alt="" class="">
                     </a>
-                    <a href="#">
-                        <img src="https://image.ibb.co/fzq0mU/zus1_08.png" alt="">
+                    <a href="#" 
+                    style="
+                    width: 60px;
+                    height: 60px;
+                    padding: 5px;
+                    display: inline-block;">
+                        <img style="
+                        width: 60px;
+                        height: 55px;;
+                        transition: 0.5s;" width="60px" height="55px" src="https://image.ibb.co/fzq0mU/zus1_08.png" alt="">
                     </a>
                 </div>
             </td>
