@@ -1,12 +1,87 @@
 .block {
   padding: 4rem 0; }
 
+#navigation_side {
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: rgba(101, 42, 217, 0.99);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s ease-in-out; }
+  #navigation_side.opened {
+    left: 0 !important;
+    opacity: 1 !important;
+    visibility: visible !important; }
+  #navigation_side .border-bottom {
+    border-color: rgba(248, 249, 250, 0.3) !important; }
+  #navigation_side .border {
+    border-color: rgba(248, 249, 250, 0.3) !important; }
+  #navigation_side .subs .x {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px; }
+  #navigation_side ul li a {
+    border: 1px solid rgba(248, 249, 250, 0.3);
+    transition: all 0.2s ease-in-out;
+    display: block;
+    text-decoration: none !important;
+    padding-left: 15px !important; }
+    #navigation_side ul li a:hover {
+      border-color: #f8f9fa; }
+
 header {
   background-image: url(../images/header.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover; }
+  header .subs .x {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px; }
+  header .border {
+    border-color: rgba(248, 249, 250, 0.3) !important;
+    transition: all 0.2s ease-in-out;
+    color: #fff; }
+    header .border::placeholder {
+      color: #f8f9fa; }
+    header .border:hover {
+      border-color: #f8f9fa !important; }
+  header .nav_items {
+    border-color: rgba(248, 249, 250, 0.3) !important; }
+    header .nav_items a {
+      color: rgba(248, 249, 250, 0.9) !important;
+      text-decoration: none !important;
+      transition: all 0.2s ease-in-out; }
+      header .nav_items a:hover {
+        color: #fff; }
+  header .swiper-container .swiper-pagination .swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.7); }
+    header .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+      background-color: #fff; }
+  header .socials .fa {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid rgba(248, 249, 250, 0.3);
+    background: transparent;
+    border-radius: 50%;
+    margin: 3px;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer; }
+    header .socials .fa:hover {
+      background-color: #fff;
+      color: #000; }
 
 .videos .v-item {
   position: relative; }
