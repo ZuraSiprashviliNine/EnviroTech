@@ -242,7 +242,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-pagination d-flex flex-row justify-content-center justify-content-md-start"></div>
+                        <div class="swiper-pagination text-pagination d-flex flex-row justify-content-center justify-content-md-start"></div>
                     </div>
                 </div>
                 <div class="col-md-6 p-2 align-self-lg-end align-self-center">
@@ -636,7 +636,7 @@
             var swiper = new Swiper('.text-container', {
                 pagination: {
                     clickable: true,
-                    el: '.swiper-pagination',
+                    el: '.text-pagination',
                 },
             });
 
@@ -690,10 +690,10 @@
             var blogSwiper = new Swiper('.blog-swiper', {
                 slidesPerView: 2,
                 spaceBetween: 30,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
+                // pagination: {
+                    // el: '.swiper-pagination',
+                    // clickable: true,
+                // },
             });
         });
     </script>
