@@ -143,6 +143,99 @@ header{
     }
 }
 
+.contact{
+
+    form{
+        .input-group{
+            position: relative;
+            .fa{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 5px 0 10px;
+                z-index: 1000;
+            }
+        }
+        input[type='text'],input[type='email']{
+            padding-left: 30px !important;
+        }
+        input{
+            border-radius: 0 !important;
+        }
+        textarea{
+            border-radius: 0 !important;
+        }
+        &::placeholder{
+            color: $muted !important; 
+        }
+
+        input[type='submit']{
+            border-radius: 0;
+            transition: $transition-base;
+
+            &:hover{
+                background-color:$dark !important;
+                color: $white !important;
+            }
+        }
+
+        @media only screen and (max-width: $md){
+            input[type='submit']{
+                width: 100%;
+            }
+        }
+    }
+    
+    .item{
+        background-color: $white;;
+        position: relative;
+        transition: $transition-base;
+        @media only screen and (max-width: $md){
+            padding-top: 40px !important;
+        }
+
+        .sub-item{
+            padding-top: 40px !important;
+            transition: $transition-base;
+
+            // position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: auto;
+            position: relative;
+            border: 2px solid rgba($muted, 0.3);
+
+        }
+        .image{
+            position: absolute;
+            top: -40px;
+            left: 0;;
+            right: 0;
+            margin: auto;
+            width: 80px;
+            height: 80px;;
+            img{
+                width: 100%;
+            }
+        }
+
+        &:hover{
+            padding-bottom:100px;
+            .sub-item{
+                box-shadow: 0 0 8px 3px rgba($muted, 0.3);
+                // position: absolute;
+                top: -10px;
+            }
+        }
+    }
+}
+
 .matyn{
     transition: $transition-base;
     background-color: $warning;
