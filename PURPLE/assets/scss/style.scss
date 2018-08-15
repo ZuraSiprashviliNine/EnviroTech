@@ -82,11 +82,34 @@
 }
 
 header{
-    background-image: url(../images/header.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
+    
+    position: relative;
+    #backSlider{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;;
+        z-index: -1;
+        .cover{
+            background-color: rgba($purple, 0.7);
+            height: 100%;
+
+            .swiper-container{
+                height: 100%;
+                .swiper-wrapper{
+                    height: 100%;
+                    .swiper-slide{
+                        height: 100%;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+        
+    }
 
     .subs{
         .x{

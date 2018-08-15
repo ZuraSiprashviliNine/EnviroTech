@@ -91,6 +91,23 @@
     </div>
     
     <header class="d-flex pt-3 flex-column justify-content-between">
+        <div id="backSlider">
+            <div class="cover">
+                <div class="swiper-container back-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image: url(https://wallpaperstudio10.com/static/wpdb/wallpapers/3840x2160/170468.jpg);">
+                            <div class="cover"></div>
+                        </div>
+                        <div class="swiper-slide" style="background-image: url(https://i.ytimg.com/vi/C5wBkVrZAbo/maxresdefault.jpg);">
+                            <div class="cover"></div>
+                        </div>
+                        <div class="swiper-slide" style="background-image: url(https://pre00.deviantart.net/dc34/th/pre/f/2015/030/6/f/_minflat__dark_material_design_wallpaper__4k__by_dakoder-d8fjqzu.jpg);">
+                            <div class="cover"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="navigation my-3">
             <div class="container">
                 <div class="row align-items-center">
@@ -162,7 +179,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 p-2">
-                    <div class="swiper-container">
+                    <div class="swiper-container text-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide py-2">
                                 <div class="title">
@@ -597,7 +614,7 @@
 
     <script>
         $(document).ready(() => {
-            var swiper = new Swiper('.swiper-container', {
+            var swiper = new Swiper('.text-container', {
                 pagination: {
                     clickable: true,
                     el: '.swiper-pagination',
@@ -642,6 +659,13 @@
                 }
                 $('#video').find('video').attr('src', url);
                 $('#video').fadeIn();
+            });
+
+
+            var backSwiper = new Swiper('.back-slider');
+
+            swiper.on('slideChange', () => {
+                backSwiper.slideTo(swiper.activeIndex);
             })
             
         });

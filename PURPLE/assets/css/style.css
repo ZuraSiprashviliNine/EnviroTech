@@ -55,11 +55,26 @@
       border-color: #f8f9fa; }
 
 header {
-  background-image: url(../images/header.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover; }
+  position: relative; }
+  header #backSlider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; }
+    header #backSlider .cover {
+      background-color: rgba(101, 42, 217, 0.7);
+      height: 100%; }
+      header #backSlider .cover .swiper-container {
+        height: 100%; }
+        header #backSlider .cover .swiper-container .swiper-wrapper {
+          height: 100%; }
+          header #backSlider .cover .swiper-container .swiper-wrapper .swiper-slide {
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover; }
   header .subs .x {
     border-radius: 50%;
     width: 30px;
