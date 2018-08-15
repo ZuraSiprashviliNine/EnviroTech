@@ -82,7 +82,6 @@
 }
 
 header{
-    
     position: relative;
     #backSlider{
         position: absolute;
@@ -316,6 +315,14 @@ header{
                 border-radius: 20px;
             }
         }
+    }
+}
+
+.blog-swiper{
+    .swiper-button-next, .swiper-button-prev{
+        background: none !important;
+        font-size: 60px !important;
+        color: $purple;
     }
 }
 

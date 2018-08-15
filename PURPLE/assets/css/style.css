@@ -204,6 +204,11 @@ header {
   background-color: #8455e1;
   border-radius: 20px; }
 
+.blog-swiper .swiper-button-next, .blog-swiper .swiper-button-prev {
+  background: none !important;
+  font-size: 60px !important;
+  color: #652ad9; }
+
 footer {
   background-repeat: no-repeat;
   background-position: bottom;
