@@ -88,6 +88,42 @@ header {
     header .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
       background-color: #fff; }
 
+.team_ .item, .course .item {
+  border: 1px solid rgba(108, 117, 125, 0.3);
+  border-bottom-width: 3px;
+  border-radius: 4px; }
+  .team_ .item .socs a, .course .item .socs a {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 5px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid blue; }
+    .team_ .item .socs a.fa-facebook, .course .item .socs a.fa-facebook {
+      color: blue;
+      border-color: blue; }
+    .team_ .item .socs a.fa-twitter, .course .item .socs a.fa-twitter {
+      color: cyan !important;
+      border-color: cyan !important; }
+    .team_ .item .socs a.fa-linkedin, .course .item .socs a.fa-linkedin {
+      color: #5ea7d2 !important;
+      border-color: #5ea7d2 !important; }
+    .team_ .item .socs a.fa-youtube, .course .item .socs a.fa-youtube {
+      color: red !important;
+      border-color: red !important; }
+  .team_ .item .cont, .course .item .cont {
+    color: #6c757d !important; }
+    .team_ .item .cont a, .course .item .cont a {
+      color: #6c757d !important;
+      text-decoration: none !important;
+      padding: 5px 0;
+      font-size: 14px;
+      text-transform: capitalize; }
+      .team_ .item .cont a .fa, .course .item .cont a .fa {
+        margin-right: 10px !important;
+        width: 25px; }
+
 .contact form .input-group {
   position: relative; }
   .contact form .input-group .fa {

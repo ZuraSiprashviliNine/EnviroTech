@@ -143,6 +143,62 @@ header{
     }
 }
 
+
+.team_, .course{
+    .item{
+        border: 1px solid rgba($muted, 0.3);
+        border-bottom-width: 3px;
+        border-radius: 4px;
+        .socs{
+            a{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                margin: 0 5px;
+                text-align: center;
+                line-height: 30px;
+                border: 1px solid blue;
+
+                &.fa-facebook{
+                    color: blue;
+                    border-color: blue;
+                }
+                &.fa-twitter{
+                    color: cyan !important;
+                    border-color: cyan !important;
+                }
+
+                &.fa-linkedin{
+                    color: #5ea7d2 !important;
+                    border-color: #5ea7d2 !important;
+                }
+
+                &.fa-youtube{
+                    color: red !important;
+                    border-color: red !important;
+                }
+            }
+        }
+
+        .cont{
+            color: $muted !important;
+            a{
+                color: $muted !important;
+                text-decoration: none !important;
+                padding: 5px 0;
+                font-size: 14px;
+                text-transform: capitalize;
+
+                .fa{
+                    margin-right: 10px !important;
+                    width: 25px;
+                }
+            }
+        }
+    }
+}
+
+
 .contact{
 
     form{
