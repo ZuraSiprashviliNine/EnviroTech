@@ -1,0 +1,54 @@
+
+@import './bootstrap/functions';
+@import './bootstrap/variables';
+
+*:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+
+body{
+    min-height: 100vh;
+    >.container{
+        min-height: 100vh;
+
+        >.row{
+            min-height: 100vh;
+        }
+    }
+
+    .form{
+        input[type='text'], input[type='email'], select{
+            background-color: transparent !important;
+            border: 0 !important;
+            border-bottom: 2px solid rgba($white, 0.7) !important;
+            border-radius: 0 ;
+            color: #37A7AA;
+            font-weight: bold;
+
+            &::placeholder{
+                color: #37A7AA;
+            }
+            
+            &:focus{
+                color: #37A7AA !important;
+            }
+
+            option{
+                background-color:rgba(#37A7AA, 0.9);
+                color: $white;
+                padding: 2rem !important;
+            }
+        }
+        input[type='submit']{
+            background-image: url(../images/button.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            padding: 40px 0;
+            background-position: center center;
+            background-color: transparent !important;
+        }
+    }
+}

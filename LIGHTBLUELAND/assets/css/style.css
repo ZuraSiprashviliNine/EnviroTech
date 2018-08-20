@@ -1,0 +1,35 @@
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important; }
+
+body {
+  min-height: 100vh; }
+  body > .container {
+    min-height: 100vh; }
+    body > .container > .row {
+      min-height: 100vh; }
+  body .form input[type='text'], body .form input[type='email'], body .form select {
+    background-color: transparent !important;
+    border: 0 !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7) !important;
+    border-radius: 0;
+    color: #37A7AA;
+    font-weight: bold; }
+    body .form input[type='text']::placeholder, body .form input[type='email']::placeholder, body .form select::placeholder {
+      color: #37A7AA; }
+    body .form input[type='text']:focus, body .form input[type='email']:focus, body .form select:focus {
+      color: #37A7AA !important; }
+    body .form input[type='text'] option, body .form input[type='email'] option, body .form select option {
+      background-color: rgba(55, 167, 170, 0.9);
+      color: #fff;
+      padding: 2rem !important; }
+  body .form input[type='submit'] {
+    background-image: url(../images/button.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 40px 0;
+    background-position: center center;
+    background-color: transparent !important; }
+
+/*# sourceMappingURL=style.css.map */
