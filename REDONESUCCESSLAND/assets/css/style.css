@@ -1,0 +1,109 @@
+body {
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-color: #f8f9fa; }
+  body > .container-fluid {
+    min-height: 100vh; }
+    body > .container-fluid > .row {
+      min-height: inherit; }
+      body > .container-fluid > .row > div {
+        min-height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end; }
+
+html, body {
+  width: 100vw;
+  overflow-x: hidden; }
+
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important; }
+
+.form-container {
+  position: relative;
+  margin-right: -50px; }
+  .form-container .imgs {
+    position: relative; }
+    .form-container .imgs img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0; }
+  .form-container form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .form-container form .fc {
+      background-color: rgba(220, 53, 69, 0.8);
+      width: 100%;
+      margin-right: -5rem;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      padding: 2rem;
+      margin-bottom: 5rem;
+      padding-right: 8rem; }
+      .form-container form .fc input[type='text'], .form-container form .fc input[type='email'], .form-container form .fc select {
+        background-color: transparent !important;
+        border: 0 !important;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.7) !important;
+        border-radius: 0;
+        color: #fff; }
+        .form-container form .fc input[type='text']::placeholder, .form-container form .fc input[type='email']::placeholder, .form-container form .fc select::placeholder {
+          color: #fff; }
+        .form-container form .fc input[type='text']:focus, .form-container form .fc input[type='email']:focus, .form-container form .fc select:focus {
+          color: #fff; }
+        .form-container form .fc input[type='text'] option, .form-container form .fc input[type='email'] option, .form-container form .fc select option {
+          background-color: rgba(220, 53, 69, 0.8);
+          color: #fff;
+          padding: 2rem !important; }
+      .form-container form .fc input[type='submit'] {
+        border-radius: 20px;
+        font-weight: bold;
+        background-color: #f8f9fa;
+        box-shadow: inset 0px 0px 120px 0px rgba(0, 0, 0, 0.1); }
+
+footer {
+  position: relative; }
+  footer .imgs {
+    bottom: 0;
+    position: absolute; }
+    footer .imgs img {
+      width: 100px;
+      height: 100px; }
+  footer > .container-fluid {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    color: #17a2b8; }
+
+@media only screen and (max-width: 992px) {
+  body {
+    background-position: left center !important; }
+
+  .form-container .imgs {
+    display: none; }
+
+  .fc {
+    margin: 2rem !important;
+    padding: 2rem !important;
+    width: auto !important; }
+
+  footer .imgs {
+    position: initial; } }
+
+/*# sourceMappingURL=style.css.map */

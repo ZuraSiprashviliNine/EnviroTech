@@ -1,0 +1,149 @@
+
+@import './bootstrap/functions';
+@import './bootstrap/variables';
+
+
+body{
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-color: $light;
+
+    >.container-fluid{
+        min-height: 100vh;
+
+        >.row{
+            min-height: inherit;
+            >div{
+                min-height: inherit;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+            }
+        }
+    }
+}
+
+html, body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+*:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+
+.form-container{
+    position: relative;
+    margin-right: -50px;
+    .imgs{
+        position: relative;
+        img{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+    form{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .fc{
+            background-color: rgba($red, 0.8);
+            width: 100%;
+            margin-right: -5rem;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 5rem;
+            padding-right: 8rem;
+
+            input[type='text'], input[type='email'], select{
+                background-color: transparent !important;
+                border: 0 !important;
+                border-bottom: 2px solid rgba($white, 0.7) !important;
+                border-radius: 0 ;
+                color: $white;
+    
+                &::placeholder{
+                    color: $white;
+                }
+                
+                &:focus{
+                    color: $white;
+                }
+    
+                option{
+                    background-color: rgba($red, 0.8);
+                    color: $white;
+                    padding: 2rem !important;
+                }
+            }
+            input[type='submit']{
+                border-radius: 20px;
+                font-weight: bold;
+                background-color: $light;;
+                box-shadow: inset 0px 0px 120px 0px rgba(0,0,0,0.1);
+            }
+        }
+    }
+}
+
+footer{
+    position: relative;
+    .imgs{
+        bottom: 0;
+        position: absolute;
+        img{
+            width: 100px;
+            height: 100px;;
+        }
+    }
+    >.container-fluid{
+        position: absolute;
+        top: -100px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        color: $info;
+    }
+}
+
+@media only screen and (max-width: $lg){
+    body{
+        background-position: left center !important;
+    }
+    form{
+    }
+    .form-container{
+        .imgs{
+            display: none;
+        }
+    }
+    .fc{
+        margin: 2rem !important;
+        padding: 2rem !important;
+        width: auto !important;
+    }
+    footer{
+        .imgs{
+            position: initial;
+        }
+        >.container-fluid{
+        }
+    }
+}
