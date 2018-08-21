@@ -1,0 +1,20 @@
+.lie {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+*:focus {
+  outline: none !important;
+  box-shadow: none !important; }
+
+footer {
+  padding: 10rem 0; }
+  footer .title_ .line {
+    border-bottom: 8px solid rgba(248, 249, 250, 0.3);
+    margin-top: 0.5rem;
+    width: 50%; }
+    @media only screen and (max-width: 768px) {
+      footer .title_ .line {
+        width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
