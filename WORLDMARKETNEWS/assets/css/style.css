@@ -13,8 +13,5 @@ footer {
     border-bottom: 8px solid rgba(248, 249, 250, 0.3);
     margin-top: 0.5rem;
     width: 50%; }
-    @media only screen and (max-width: 768px) {
-      footer .title_ .line {
-        width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

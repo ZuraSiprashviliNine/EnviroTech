@@ -20,9 +20,6 @@ footer{
             border-bottom: 8px solid rgba($light, 0.3);
             margin-top: 0.5rem;
             width: 50%;
-            @media only screen and (max-width: $md){
-                width: 100%;
-            }
         }
     }
 }
