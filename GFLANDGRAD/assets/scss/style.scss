@@ -1,0 +1,108 @@
+
+@import './bootstrap/functions';
+@import './bootstrap/variables';
+
+a:focus, .btn:focus, button:focus, input:focus{
+    box-shadow: none !important;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    >.container{
+        min-height: inherit;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+form{
+    .input-group{
+        margin: 20px 0;
+        select{
+            background-color: transparent !important;
+            border: 0;
+            color: $white;
+
+            &::placeholder{
+                color: $white;
+            }
+            &:focus{
+                border-top: 0 !important;
+                border-right: 0 !important;
+                border-left: 0 !important;
+                color: $white !important;
+            }
+            option {
+                background-color: $pink;
+                color: $white !important;
+            }
+        }
+        input{
+            letter-spacing: 2px;
+            border: 0;
+            background: transparent !important;
+            border-bottom: 1px solid #aca8b3;
+            border-bottom-left-radius: 1px;
+            border-bottom-right-radius: 1px;
+            padding: 5px;
+            font-size: 14px !important;
+            color: $light !important;
+            letter-spacing: 2px;
+
+            &::placeholder{
+                font-size: 14px !important;
+                font-size: 14px !important;
+                letter-spacing: 2px;
+                color: darken($light, 10%);
+            }
+            transition: $transition-base;
+
+            &.active{
+                border-color: lighten(#aca8b3, 10%);
+                padding: 5px 10px;
+
+                &::placeholder{
+                    color: $white;
+                }
+            }
+
+            &:hover{
+                @extend .active;
+            }
+        }
+
+        .btn{
+            background-size: 100% !important;
+            background-position: center center !important;
+            background-repeat: no-repeat !important;
+            border-radius: 40px !important;
+            color: #aa6b78;
+            transition: $transition-base;
+            font-size: 14px !important;
+            letter-spacing: 1px;
+            border: 0 !important;
+            background-image: url(../images/button.png) !important;
+
+            padding: 20px 0 !important;
+            
+            &.active{
+                // transform: scale(1.1);
+            }
+
+            &:hover{
+                @extend .active;
+            }
+        }
+    }
+}
+
+.pp{
+    color: rgba(lighten($pink, 10%), 0.9);
+}
