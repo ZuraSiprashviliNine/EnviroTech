@@ -1,0 +1,48 @@
+body {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-attachment: fixed;
+  min-height: 100vh; }
+  body > div {
+    min-height: 100vh; }
+
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important; }
+
+footer {
+  background-color: rgba(33, 60, 71, 0.61);
+  padding: 1rem 0;
+  margin-bottom: 2rem; }
+
+form {
+  background-color: rgba(33, 60, 71, 0.61);
+  padding: 2rem;
+  margin-top: 2rem; }
+  form input[type='text'], form input[type='email'], form select {
+    background-color: transparent !important;
+    border: 0 !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7) !important;
+    border-radius: 0;
+    color: #fff;
+    font-weight: bold; }
+    form input[type='text']::placeholder, form input[type='email']::placeholder, form select::placeholder {
+      color: #fff; }
+    form input[type='text']:focus, form input[type='email']:focus, form select:focus {
+      color: #fff !important; }
+    form input[type='text'] option, form input[type='email'] option, form select option {
+      color: #343a40;
+      padding: 2rem !important; }
+  form select {
+    color: #fff !important; }
+  form input[type='submit'] {
+    background-color: #ba3c43;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px; }
+
+/*# sourceMappingURL=style.css.map */

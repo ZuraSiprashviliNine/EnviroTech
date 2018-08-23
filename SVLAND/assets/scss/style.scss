@@ -1,0 +1,67 @@
+
+@import './bootstrap/functions';
+@import './bootstrap/variables';
+
+
+body{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    >div{
+        min-height: 100vh;
+    }
+}
+
+*:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+footer{
+
+    background-color: rgba(#213c47, 0.61);
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+form{
+    background-color: rgba(#213c47, 0.61);
+    padding: 2rem;
+    margin-top: 2rem;
+    input[type='text'], input[type='email'], select{
+        background-color: transparent !important;
+        border: 0 !important;
+        border-bottom: 2px solid rgba($white, 0.7) !important;
+        border-radius: 0 ;
+        color: $white;
+        font-weight: bold;
+
+        &::placeholder{
+            color: $white;
+        }
+        
+        &:focus{
+            color: $white !important;
+        }
+        option{
+            color: $dark;
+            padding: 2rem !important;
+        }
+    }
+
+    select{
+        color: $white !important;
+    }
+
+    input[type='submit']{
+        background-color: #ba3c43;
+        color: $white;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 50px;
+    }
+}
