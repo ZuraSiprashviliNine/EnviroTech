@@ -1,0 +1,199 @@
+
+@import './bootstrap/functions';
+@import './bootstrap/variables';
+
+input:focus, button:focus, .btn:focus{
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.lie{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.one{
+    background-image: url(../images/one.png)
+}
+
+.two{
+    background-image: url(../images/two.png)
+}
+.three{
+    background-image: url(../images/three.png);
+}
+.tipi{
+    background-image: url(../images/tipi.png);
+}
+
+header.two, header.three{
+    form{
+        input[type='submit']{
+            color: $dark !important;
+            background-color: $light !important;;
+        }
+    }
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.box{
+    border: 1px solid;
+    border-radius: 60px;
+    &_one{
+        border-color: $info;
+        .tipi{
+            background: $danger;;
+            padding-right: 3px;;
+            padding-bottom: 2px;
+            img{
+                border: 2px solid $danger;
+            }
+        }
+    }
+    &_two{
+        border-color: darkgreen;
+        .tipi{
+            background: darkgreen;;
+            padding-bottom: 2px;
+            img{
+                border: 2px solid darkgreen;
+            }
+        }
+    }
+    &_three{
+        border-color: $danger;
+        .tipi{
+            background: $danger;;
+            padding-right: 2px;
+            img{
+                border: 2px solid $danger;
+            }
+        }
+    }
+    @media only screen and (max-width: $md){
+        .div{
+            font-size: 22px;
+        }
+    }
+    position: relative;
+    .tipi{
+        position: absolute;
+        border-radius: 50%;
+        left: 100px;;
+        top: -50px;
+        right: auto;
+        bottom: auto;
+        width: 150px;
+        line-height: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3px;;
+        height: 150px;
+        @media only screen and (max-width: $xl){
+            left: 50px !important;
+        }
+        @media only screen and(max-width: $lg){
+            left: 0 !important;
+            right: 0 !important;
+            top: -100px;
+            margin: auto;
+        }
+        @media only screen and (max-width: $md){
+            position: initial !important;
+        }
+        img{
+            margin: 0;
+            padding: 0;
+            border-radius: 50%;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+form{
+    .input-group{
+        margin: 20px 0;
+        select{
+            background-color: transparent !important;
+            border: 0;
+            color: $white;
+
+            &::placeholder{
+                color: $white;
+            }
+            &:focus{
+                border-top: 0 !important;
+                border-right: 0 !important;
+                border-left: 0 !important;
+                color: $white !important;
+            }
+            option {
+                background-color: $white;
+                color: $dark !important;
+            }
+        }
+        input{
+            letter-spacing: 2px;
+            border: 0;
+            background: transparent !important;
+            border-bottom: 1px solid #aca8b3;
+            border-bottom-left-radius: 1px;
+            border-bottom-right-radius: 1px;
+            padding: 5px;
+            font-size: 14px !important;
+            color: $light !important;
+            letter-spacing: 2px;
+
+            &::placeholder{
+                font-size: 14px !important;
+                font-size: 14px !important;
+                letter-spacing: 2px;
+                color: darken($light, 10%);
+            }
+            transition: $transition-base;
+
+            &.active{
+                border-color: lighten(#aca8b3, 10%);
+                padding: 5px 10px;
+
+                &::placeholder{
+                    color: $white;
+                }
+            }
+
+            &:hover{
+                @extend .active;
+            }
+        }
+
+        .btn{
+            background-size: 100% !important;
+            background-position: center center !important;
+            background-repeat: no-repeat !important;
+            border-radius: 40px !important;
+            color: #aa6b78;
+            transition: $transition-base;
+            font-size: 14px !important;
+            letter-spacing: 1px;
+            border: 0 !important;
+            background-color: $danger !important;
+
+            padding: 10px 0 !important;
+            
+            &.active{
+                // transform: scale(1.1);
+            }
+
+            &:hover{
+                @extend .active;
+            }
+        }
+    }
+}

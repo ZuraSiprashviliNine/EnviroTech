@@ -1,0 +1,143 @@
+input:focus, button:focus, .btn:focus {
+  box-shadow: none !important;
+  outline: none !important; }
+
+.lie {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.one {
+  background-image: url(../images/one.png); }
+
+.two {
+  background-image: url(../images/two.png); }
+
+.three {
+  background-image: url(../images/three.png); }
+
+.tipi {
+  background-image: url(../images/tipi.png); }
+
+header.two form input[type='submit'], header.three form input[type='submit'] {
+  color: #343a40 !important;
+  background-color: #f8f9fa !important; }
+
+* {
+  box-sizing: border-box; }
+
+.box {
+  border: 1px solid;
+  border-radius: 60px;
+  position: relative; }
+  .box_one {
+    border-color: #17a2b8; }
+    .box_one .tipi {
+      background: #dc3545;
+      padding-right: 3px;
+      padding-bottom: 2px; }
+      .box_one .tipi img {
+        border: 2px solid #dc3545; }
+  .box_two {
+    border-color: darkgreen; }
+    .box_two .tipi {
+      background: darkgreen;
+      padding-bottom: 2px; }
+      .box_two .tipi img {
+        border: 2px solid darkgreen; }
+  .box_three {
+    border-color: #dc3545; }
+    .box_three .tipi {
+      background: #dc3545;
+      padding-right: 2px; }
+      .box_three .tipi img {
+        border: 2px solid #dc3545; }
+  @media only screen and (max-width: 768px) {
+    .box .div {
+      font-size: 22px; } }
+  .box .tipi {
+    position: absolute;
+    border-radius: 50%;
+    left: 100px;
+    top: -50px;
+    right: auto;
+    bottom: auto;
+    width: 150px;
+    line-height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3px;
+    height: 150px; }
+    @media only screen and (max-width: 1200px) {
+      .box .tipi {
+        left: 50px !important; } }
+    @media only screen and (max-width: 992px) {
+      .box .tipi {
+        left: 0 !important;
+        right: 0 !important;
+        top: -100px;
+        margin: auto; } }
+    @media only screen and (max-width: 768px) {
+      .box .tipi {
+        position: initial !important; } }
+    .box .tipi img {
+      margin: 0;
+      padding: 0;
+      border-radius: 50%;
+      height: 100%;
+      width: 100%; }
+
+form .input-group {
+  margin: 20px 0; }
+  form .input-group select {
+    background-color: transparent !important;
+    border: 0;
+    color: #fff; }
+    form .input-group select::placeholder {
+      color: #fff; }
+    form .input-group select:focus {
+      border-top: 0 !important;
+      border-right: 0 !important;
+      border-left: 0 !important;
+      color: #fff !important; }
+    form .input-group select option {
+      background-color: #fff;
+      color: #343a40 !important; }
+  form .input-group input {
+    letter-spacing: 2px;
+    border: 0;
+    background: transparent !important;
+    border-bottom: 1px solid #aca8b3;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    padding: 5px;
+    font-size: 14px !important;
+    color: #f8f9fa !important;
+    letter-spacing: 2px;
+    transition: all 0.2s ease-in-out; }
+    form .input-group input::placeholder {
+      font-size: 14px !important;
+      font-size: 14px !important;
+      letter-spacing: 2px;
+      color: #dae0e5; }
+    form .input-group input.active, form .input-group input:hover, form .input-group input.btn:hover {
+      border-color: #c6c3cb;
+      padding: 5px 10px; }
+      form .input-group input.active::placeholder, form .input-group input:hover::placeholder, form .input-group input.btn:hover::placeholder {
+        color: #fff; }
+  form .input-group .btn {
+    background-size: 100% !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    border-radius: 40px !important;
+    color: #aa6b78;
+    transition: all 0.2s ease-in-out;
+    font-size: 14px !important;
+    letter-spacing: 1px;
+    border: 0 !important;
+    background-color: #dc3545 !important;
+    padding: 10px 0 !important; }
+
+/*# sourceMappingURL=style.css.map */
