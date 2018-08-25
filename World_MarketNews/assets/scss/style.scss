@@ -1,0 +1,213 @@
+
+@import './bootstrap/functions';
+@import './bootstrap/variables';
+
+body{
+    font-family: 'Muli', sans-serif;
+    min-height: 100vh;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+main{
+}
+
+.lie{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    background-attachment: fixed;
+    padding-top: 30vh;
+    .slider{
+        position: relative;
+        .swiper-item{
+            box-sizing: border-box;
+            border-bottom: 3px solid rgba($muted, 0.3)  ;
+            .btn{
+                border-radius: 0 !important;
+                box-shadow: 0 5px 8px 2px rgba($dark, 0.02);
+            }
+        }
+    }
+    .buttons{
+        .btn{
+            border-radius: 0 !important;
+            border: 0 !important;
+            outline: none !important;
+            transition: $transition-base;
+            &:focus{
+                box-shadow: none !important;
+                background-color: $light !important;
+            }
+            &:hover{
+                color: $info !important;
+                background-color: $light !important;
+            }
+            @media only screen and (max-width: $md) {
+                flex: 1;
+            }
+        }
+    }
+}
+
+.navbar{
+    box-shadow: 0 5px 8px 2px rgba($dark, 0.02);
+    transition: $transition-base;
+    .navbar-nav{
+        .nav-item{
+            &.active{
+                .nav-link{
+                    color: $info;
+                }
+            }
+            &:hover{
+                .nav-link{
+                    color: $info;
+                }
+            }
+            .nav-link{
+                color: $dark;
+                transition: $transition-base;
+            }
+        }
+    }
+}
+
+form{
+    .input-group{
+        input[type="text"], input[type="email"]{
+            &:focus{
+                outline: none;
+                box-shadow: none;
+            }
+            border: 0 !important;
+            border-radius: 0 !important;
+            background-color: #e7f0f5;
+            box-sizing: border-box;
+            bottom: 3px solid rgba($muted, 0.3)  ;
+            color: #8e99a0 !important;
+            font-size: 15px !important;
+
+            &::placeholder{
+                color: $muted !important;
+            }
+        }
+        input[type='submit']{
+            border-radius: 0 !important;
+            box-shadow: 0 5px 8px 2px rgba($dark, 0.1);
+        }
+    }
+
+    .phone{
+        box-sizing: border-box;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: stretch;
+        input{
+            &:focus{
+                outline: none;
+                box-shadow: none;
+            }
+            border: 0 !important;
+            border-radius: 0 !important;
+            background-color: #e7f0f5;
+            box-sizing: border-box;
+            bottom: 3px solid rgba($muted, 0.3)  ;
+            color: #8e99a0 !important;
+            font-size: 15px !important;
+
+            &::placeholder{
+                color: $muted !important;
+            }
+
+            &:first-child{
+                color: $dark !important;
+                width: 80px;
+            }
+            &:nth-child(2){
+                text-align: center;
+                width: 30px;
+            }
+            &:last-child{
+                width: calc(100% - 110px)
+            }
+        }
+    }
+
+    .dropdown{
+        >button{
+            width: 100%;
+            &:focus{
+                outline: none;
+                box-shadow: none;
+            }
+            border: 0 !important;
+            border-radius: 0 !important;
+            background-color: #e7f0f5 !important;
+            box-sizing: border-box;
+            bottom: 3px solid rgba($muted, 0.3)  ;
+            color: $dark !important;
+            font-size: 15px !important;
+            text-align: left;
+            &::after{
+                position: absolute;
+                right: 1rem;
+                bottom: 0;
+                top: 0;
+                margin: auto;
+            }
+        }
+        .dropdown-menu{
+            box-shadow: 0 0px 8px 2px rgba($dark, 0.02);
+            padding: 0;
+            width: 100%;
+            background-color: $light;
+            border-radius: 0 !important;
+            border: 0;
+
+            button{
+                transition: $transition-base;
+                &:hover{
+                    background-color: rgba($info, 0.3);
+                    color: $black;
+                }
+            }
+        }
+    }
+    
+}
+
+.form-title{
+    font-size: 30px;
+}
+
+.explore-swiper-container{
+    .swiper-slide{
+        >div{
+            background-color: $white;;
+            border-bottom: 3px solid rgba($muted, 0.3)  ;
+        }
+    }
+    .swiper-pagination{
+        position: initial;
+
+        &-bullet{
+            border-radius: 0 !important;
+            background-color: rgba($info, 0.9);
+
+            &-active{
+                background-color: $info !important;
+            }
+        }
+    }
+}
+
+.blog_item{
+    border-bottom: 3px solid rgba($muted, 0.3)  ;
+    
+}
