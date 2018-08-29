@@ -1,0 +1,48 @@
+.lie, form .input-group .btn {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+form .input-group select {
+  background-color: transparent;
+  border: 0 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 0 !important;
+  color: #fff;
+  box-shadow: none !important;
+  font-size: 0.875rem;
+  transition: all 0.2s ease-in-out; }
+form .input-group input {
+  background-color: transparent !important;
+  border: 0 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 0 !important;
+  color: #fff;
+  box-shadow: none !important;
+  font-size: 0.875rem;
+  transition: all 0.2s ease-in-out; }
+  form .input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.9); }
+  form .input-group input:focus {
+    color: #fff !important;
+    border-color: rgba(255, 255, 255, 0.6) !important;
+    padding-left: 2rem; }
+  form .input-group input:hover {
+    color: #fff !important;
+    border-color: rgba(255, 255, 255, 0.6) !important; }
+form .input-group .btn {
+  border-radius: 50px;
+  font-weight: bold;
+  color: #fff;
+  background-size: 150%;
+  background-image: url(../images/btn.png); }
+
+main {
+  margin-top: -100px; }
+
+footer .btn {
+  border-radius: 50px;
+  background-image: url(../images/btn.png);
+  background-size: 150%; }
+
+/*# sourceMappingURL=style.css.map */

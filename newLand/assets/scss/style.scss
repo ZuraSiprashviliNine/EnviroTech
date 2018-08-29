@@ -1,0 +1,75 @@
+
+@import './bootstrap/functions';
+@import './bootstrap/variables';
+
+
+.lie{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+form{
+    .input-group{
+        select{
+            background-color: transparent;
+            border: 0 !important;
+            border-bottom: 1px solid rgba($white, 0.3) !important; 
+            border-radius: 0 !important;
+            color: $white;
+            box-shadow: none !important;
+            font-size: $font-size-sm;
+            transition: $transition-base;
+
+            &:focus{
+                // color: $white;
+                // background-color: rgba($black, 0.9);
+            }
+        }
+        input,{
+            background-color: transparent !important;
+            border: 0 !important;
+            border-bottom: 1px solid rgba($white, 0.3) !important; 
+            border-radius: 0 !important;
+            color: $white;
+            box-shadow: none !important;
+            font-size: $font-size-sm;
+            transition: $transition-base;
+            &::placeholder{
+                color: rgba($white,0.9);
+            }
+
+            &:focus{
+                color: $white !important;
+                border-color: rgba($white, 0.6) !important;
+                padding-left: 2rem;
+            }
+
+            &:hover{
+                color: $white !important;
+                border-color: rgba($white, 0.6) !important;
+            }
+        }
+        .btn{
+            border-radius: 50px;
+            @extend .lie;
+            font-weight: bold;
+            color: $white;
+            background-size: 150%;
+            background-image: url(../images/btn.png);
+        }
+    }
+}
+
+main{
+    margin-top: -100px;
+}
+
+footer{
+    .btn{
+        border-radius: 50px;
+        background-image: url(../images/btn.png);
+        background-size: 150%;;
+    }
+}
