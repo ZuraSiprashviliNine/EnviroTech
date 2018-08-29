@@ -1,0 +1,40 @@
+.lie {
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: bottom; }
+
+footer {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+form .input-group select {
+  background-color: transparent;
+  border: 0 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 0 !important;
+  color: #fff;
+  box-shadow: none !important;
+  font-size: 0.875rem;
+  transition: all 0.2s ease-in-out; }
+form .input-group input {
+  background-color: transparent !important;
+  border: 0 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 0 !important;
+  color: #fff;
+  box-shadow: none !important;
+  font-size: 0.875rem;
+  transition: all 0.2s ease-in-out; }
+  form .input-group input::placeholder {
+    color: rgba(248, 249, 250, 0.7); }
+  form .input-group input:focus {
+    color: #fff !important;
+    border-color: rgba(255, 255, 255, 0.6) !important;
+    padding-left: 2rem; }
+  form .input-group input:hover {
+    color: #fff !important;
+    border-color: rgba(255, 255, 255, 0.6) !important; }
+form .input-group .btn {
+  border-radius: 50px; }
+
+/*# sourceMappingURL=style.css.map */

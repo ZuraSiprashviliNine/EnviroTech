@@ -1,0 +1,62 @@
+
+@import './bootstrap/functions';
+@import './bootstrap/variables';
+
+
+.lie{
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+footer{
+    background-color: rgba($black, 0.3);
+}
+
+form{
+    .input-group{
+        select{
+            background-color: transparent;
+            border: 0 !important;
+            border-bottom: 1px solid rgba($white, 0.3) !important; 
+            border-radius: 0 !important;
+            color: $white;
+            box-shadow: none !important;
+            font-size: $font-size-sm;
+            transition: $transition-base;
+
+            &:focus{
+                // color: $white;
+                // background-color: rgba($black, 0.9);
+            }
+        }
+        input,{
+            background-color: transparent !important;
+            border: 0 !important;
+            border-bottom: 1px solid rgba($white, 0.3) !important; 
+            border-radius: 0 !important;
+            color: $white;
+            box-shadow: none !important;
+            font-size: $font-size-sm;
+            transition: $transition-base;
+            &::placeholder{
+                color: rgba($light,0.7);
+            }
+
+            &:focus{
+                color: $white !important;
+                border-color: rgba($white, 0.6) !important;
+                padding-left: 2rem;
+            }
+
+            &:hover{
+                color: $white !important;
+                border-color: rgba($white, 0.6) !important;
+            }
+        }
+        .btn{
+            border-radius: 50px;
+        }
+    }
+}
