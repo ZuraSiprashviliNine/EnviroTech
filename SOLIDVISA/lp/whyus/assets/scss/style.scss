@@ -1,0 +1,82 @@
+
+@import './bootstrap/functions';
+@import './bootstrap/variables';
+
+
+body{
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: top left;
+    background-image: url(../images/cir.png);
+
+    @media only screen and (max-width: $xl){
+        background-size: 60%;
+    }
+    @media only screen and (max-width: $lg){
+        background-size: 80% !important;
+    }
+}
+
+@media only screen and(max-width:$md){
+    body{
+        background-image: url(../images/tips.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    .cover{
+        background-color: rgba($danger, 0.9);
+    }
+}
+
+@media only screen and (max-width:$md){
+    .pp{
+        *{
+            color: $white;
+        }
+    }
+}
+
+form{
+    input[type='text'], input[type='email'], select{
+        background-color: transparent !important;
+        border: 0 !important;
+        border-bottom: 2px solid rgba($white, 0.7) !important;
+        border-radius: 0 ;
+        color: $white;
+        transition: $transition-base;
+        &.a{
+            padding-left: 2rem;
+        }
+        &:focus{
+            @extend .a;
+            box-shadow: none;
+        }
+        &:hover{
+            @extend .a;
+        }
+        &::placeholder{
+            color: $white;
+        }
+        
+        &:focus{
+            color: $white !important;
+        }
+        option{
+            color: $dark;
+            padding: 2rem !important;
+        }
+    }
+
+    select{
+        color: $white !important;
+    }
+
+    input[type='submit']{
+        background-color: #f1f1f1;
+        color: $dark;
+        padding: 10px 20px;
+        border-radius: 50px;
+    }
+}

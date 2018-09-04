@@ -1,0 +1,52 @@
+body {
+  background-repeat: no-repeat;
+  background-size: 55%;
+  background-position: top left;
+  background-image: url(../images/cir.png); }
+  @media only screen and (max-width: 1200px) {
+    body {
+      background-size: 60%; } }
+  @media only screen and (max-width: 992px) {
+    body {
+      background-size: 80% !important; } }
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: url(../images/tips.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; }
+
+  .cover {
+    background-color: rgba(220, 53, 69, 0.9); } }
+@media only screen and (max-width: 768px) {
+  .pp * {
+    color: #fff; } }
+form input[type='text'], form input[type='email'], form select {
+  background-color: transparent !important;
+  border: 0 !important;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7) !important;
+  border-radius: 0;
+  color: #fff;
+  transition: all 0.2s ease-in-out; }
+  form input[type='text'].a, form input[type='text']:focus, form input[type='text']:hover, form input[type='email'].a, form input[type='email']:focus, form input[type='email']:hover, form select.a, form select:focus, form select:hover {
+    padding-left: 2rem; }
+  form input[type='text']:focus, form input[type='email']:focus, form select:focus {
+    box-shadow: none; }
+  form input[type='text']::placeholder, form input[type='email']::placeholder, form select::placeholder {
+    color: #fff; }
+  form input[type='text']:focus, form input[type='email']:focus, form select:focus {
+    color: #fff !important; }
+  form input[type='text'] option, form input[type='email'] option, form select option {
+    color: #343a40;
+    padding: 2rem !important; }
+form select {
+  color: #fff !important; }
+form input[type='submit'] {
+  background-color: #f1f1f1;
+  color: #343a40;
+  padding: 10px 20px;
+  border-radius: 50px; }
+
+/*# sourceMappingURL=style.css.map */
