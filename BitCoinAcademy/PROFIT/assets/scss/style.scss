@@ -4,9 +4,9 @@
 
 
 header{
-    background-image: url(https://btcprofitnow.com/images/bitcoin_bg.jpg);
+    background-image: url(https://i.imgur.com/kJK4s66.png);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
 }
 body{
@@ -16,7 +16,7 @@ body{
 
 @media only screen and (min-width: $lg){
     .upp{
-        margin-top: -100px !important;
+        margin-top: -20px !important;
     }
 }
 
@@ -103,5 +103,40 @@ section{
             top: 2rem;
             right: 1rem;
         }
+    }
+}
+
+#loader{
+    @extend #pop;
+    background-color: rgba($white, 0.9);
+
+    .block{
+        border: 3px solid $info;
+        background-image: none;;
+    }
+    
+    opacity: 1;
+    z-index: 1000;
+
+    .loader_{
+        border: 16px solid #f3f3f3;
+        margin: 10px auto;
+        border-radius: 50%;
+        border-top: 16px solid $danger;
+        width: 120px;
+        height: 120px;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+      
+      /* Safari */
+      @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
     }
 }
