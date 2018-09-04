@@ -1,0 +1,82 @@
+header {
+  background-image: url(https://btcprofitnow.com/images/bitcoin_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+body {
+  font-family: Roboto, sans-serif; }
+
+@media only screen and (min-width: 992px) {
+  .upp {
+    margin-top: -100px !important; } }
+.form-container {
+  border-top: 3px solid #d65435;
+  box-shadow: 0 0 13px 3px rgba(52, 58, 64, 0.1); }
+
+form.one button {
+  border-bottom: 2px solid #082735; }
+
+section {
+  border-bottom: 1px solid rgba(52, 58, 64, 0.3); }
+  section:last-child {
+    border: 0; }
+
+.question {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  line-height: 70px; }
+
+.a {
+  background-color: rgba(108, 117, 125, 0.1);
+  border-radius: 4px; }
+
+.pre-footer {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(https://btcprofitnow.com/images/bitcoin_bg.jpg); }
+
+#naver {
+  position: fixed;
+  top: -100vh;
+  transition: 1s;
+  left: 0;
+  right: 0;
+  z-index: 100; }
+  #naver.scrolled {
+    top: 0 !important; }
+
+.vax {
+  font-size: 22px; }
+  @media only screen and (max-width: 992px) {
+    .vax {
+      font-size: 16px; } }
+
+#pop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -100;
+  background-color: rgba(0, 0, 0, 0.8);
+  min-height: 100vh;
+  transition: 1s;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  #pop .block {
+    position: relative;
+    background-image: url(https://btcprofitnow.com/images/bitcoin_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+    #pop .block #closeIt {
+      position: absolute;
+      top: 2rem;
+      right: 1rem; }
+
+/*# sourceMappingURL=style.css.map */
