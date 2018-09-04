@@ -486,6 +486,46 @@
             </div>
         </div>
     </footer>
+    <div style="display: none" id="loader">
+            <div class="container">
+                <div class="row">
+                    <div class="block p-0 col-md-4 col-10 offset-1 offset-md-4">
+                        <div id="closeIt" class="h3 m-0">
+                            <span class="fa fa-times text-white"></span>
+                        </div>
+                        <div class="text-center ">
+                            <div class="bg-dark d-flex flex-row align-items-center justify-content-center">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-10 offset-1">
+                                            <img src="https://btcprofitnow.com/images/applogo/bitcoin-profit_logo_horizontal_white.svg" alt="" class="w-10">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="text-center">
+                                    <h1 class="py-md-3 py-2 text-uppercase text-dark">
+                                        THANK YOU!
+
+                                    </h1>
+                                    <div class="py-md-3 py-2">
+Just one moment while we verify your private E-Mail now.
+
+                                    </div>
+                                    <div class="loader_">
+    
+                                    </div>
+                                    <div class="pt-3 text-center small">
+                                        Almost here
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <div id="pop">
         <div class="container">
@@ -547,6 +587,17 @@
                 }else{
                     $('#naver').removeClass('scrolled');
                 }
+                
+            });
+
+
+            $('form').submit(function(event){
+                event.preventDefault();
+                $('#loader').fadeIn();
+                setTimeout(() => {
+                    window.location.href= "./second_english.html?name=" + $(this).find('input[name="name"]').val() + "&email="+$(this).find('input[name="email"]').val();
+                }, 5000);
+
             });
             let bc = false;
             $('body').click(() => {
