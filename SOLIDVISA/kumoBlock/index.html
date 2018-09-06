@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    
+</head>
+<body>
+        <style>
+                .kumoblock{
+                    border: 1px solid #343a40;;
+                    position: relative;
+                    margin: 50px 0;
+                    color: #343a40;
+                }
+                .kumoblock a{
+                    color: #343a40;
+                    font-style: italic;
+                    font-size: 14px;
+                    text-decoration: underline !important;
+                }
+                .kumoblock a:hover{
+                    color: #dc3545;
+                }
+                .kumoTitle{
+                    text-transform: capitalize;
+                    position: absolute;
+                    top: -0.7rem;
+                    left: 2rem;
+                    background-color: white;
+                }
+        
+                .kumoList >li{
+                    flex: 0 0  calc(50% - 4rem);
+                    padding: 1rem 0;
+                }
+                .kumoList{
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    margin: 0 2rem;
+                    padding: 0;
+                    align-items:center;
+                    justify-content: space-between;
+                    list-style: disc;
+                }
+    
+    
+        
+                @media only screen and (max-width: 992px){
+                    .kumoList{
+                        flex-direction: column !important;
+                    }
+                    .kumoList >li{
+                        flex: 0 0  100% !important;
+                    }
+                }
+    
+                @media only screen and (max-width: 768px){
+    
+                    .kumoList >li{
+                        flex: 0 0  50% !important;
+                    }
+                }
+    
+                @media only screen and (max-width: 325px){
+                    .kumoList{
+                        flex-direction: column !important;
+                    }
+                }
+    
+        
+            </style>
+
+    <section class="kumoblock">
+        <div class="kumoTitle">
+            block title
+        </div>
+        <ul class="kumoList">
+            <li class="kumoListItem">
+                <a href="#"> Lorem ipsum dolor sit amet consectetur adipisicing elit </a>
+            </li>
+
+            <li class="kumoListItem">
+                <a href="#"> Lorem ipsum dolor sit amet consectetur adipisicing elit </a>
+            </li>
+        </ul>
+    </section>
+    
+</body>
+</html>
