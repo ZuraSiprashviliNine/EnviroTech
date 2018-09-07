@@ -1,0 +1,45 @@
+
+@import './bootstrap/functions';
+@import './bootstrap/variables';
+
+
+.main{
+    min-height: 100vh;
+
+    background-image: url(../images/wbg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.questRow{
+    margin: 3rem 0 !important;
+    .top{
+        display: flex;
+        flex-direction: row;
+        .number{
+            width: 30px;
+            text-align: center;
+        }
+    }
+}
+
+.main{
+    position: relative;
+
+    #logo{
+        @media only screen and (max-width: $lg){
+            display: none;
+        }
+        position: absolute;
+        top: 4rem;
+        left: -130px;
+        width: 200px;
+        z-index: 100;
+        overflow: hidden;
+
+        img{
+            background-color: $danger;
+        }
+    }
+}

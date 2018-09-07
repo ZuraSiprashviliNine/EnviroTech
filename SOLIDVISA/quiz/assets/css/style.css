@@ -1,0 +1,32 @@
+.main {
+  min-height: 100vh;
+  background-image: url(../images/wbg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom; }
+
+.questRow {
+  margin: 3rem 0 !important; }
+  .questRow .top {
+    display: flex;
+    flex-direction: row; }
+    .questRow .top .number {
+      width: 30px;
+      text-align: center; }
+
+.main {
+  position: relative; }
+  .main #logo {
+    position: absolute;
+    top: 4rem;
+    left: -130px;
+    width: 200px;
+    z-index: 100;
+    overflow: hidden; }
+    @media only screen and (max-width: 992px) {
+      .main #logo {
+        display: none; } }
+    .main #logo img {
+      background-color: #c36362; }
+
+/*# sourceMappingURL=style.css.map */
