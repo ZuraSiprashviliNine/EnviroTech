@@ -26,5 +26,7 @@ $(document).ready(() => {
 			sidebarOpen = false;
 		}
 	})
+
+	AOS.init();
 	
 });

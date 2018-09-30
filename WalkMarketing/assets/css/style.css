@@ -1,4 +1,4 @@
-.rounded-no {
+.rounded-no, .border-no {
   border-radius: 0; }
 
 a, button {
@@ -6,11 +6,17 @@ a, button {
   a:hover, button:hover {
     text-decoration: none !important; }
 
+#accordion .card-header button {
+  display: block; }
+
 button[data-toggle="collapse"] .fa {
   transition: all 0.2s ease-in-out;
   transform: rotate(90deg); }
 button[data-toggle="collapse"].collapsed .fa {
   transform: rotate(0); }
+
+.xxx strong, .xxx b {
+  color: rgba(52, 58, 64, 0.8) !important; }
 
 .btn-info {
   color: #fff !important; }
