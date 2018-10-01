@@ -18,6 +18,10 @@ a, button{
     display: block;
 }
 
+.partners{
+    background-color: $white !important;
+}
+
 button[data-toggle="collapse"]{
     .fa{
         transition: $transition-base;
@@ -28,6 +32,12 @@ button[data-toggle="collapse"]{
         .fa{
             transform: rotate(0);
         }
+    }
+}
+
+.sss{
+    >div{
+        box-shadow: 0 0 8px 3px rgba($black, 0.2) !important;
     }
 }
 
