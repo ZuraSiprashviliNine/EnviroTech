@@ -1,0 +1,227 @@
+
+@import './bootstrap/functions';
+@import './bootstrap/variables';
+
+
+.grad-red{
+    background-color: $danger;
+    background: linear-gradient(0deg, rgba(255,67,75,1) 0%, rgba(255,59,95,1) 100%);
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.ral{
+    font-family: Raleway,sans-serif;
+}
+
+.open{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.lie{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#navigation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transition: 0.5s;
+    &.scrolled{
+        box-shadow: 0 0 20px 1px rgba($black, 0.05);
+    }
+    #mail{
+        .material-icons{
+            font-size: 16px;
+        }
+        .contact{
+            color: $muted;
+            transition: 0.5s;
+            
+            &:hover{
+                color: $danger;
+            }
+        }
+    }
+}
+
+input:focus, button:focus, a:focus{
+    outline: none !important;
+}
+
+#main{
+
+    >div{
+        .images{
+            .lie{
+            }
+        }
+    }
+
+    #a_one{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+}
+
+.top{
+    &-title{
+        letter-spacing: 2px;
+        font-size: 18px;
+    }
+
+    &-form{
+        .input-group{
+            padding: 4px 0;
+
+            &._ib{
+                border-bottom: 4px solid rgba($muted, 0.1);
+                padding-bottom: 0;
+                padding-left:  2px;
+                padding-right: 2px;
+                border-radius: 50px;
+            }
+
+            >input{
+                &:focus{
+                    outline: none !important;
+                    box-shadow: none;
+                }
+                background-color: $info;
+                padding: 10px 20px;
+                color: $dark;
+                border: 0;
+                font-size: 12px;
+                letter-spacing: 2px;
+                border-radius: 50px;
+                border-bottom: 4px solid rgba($muted, 0.1);
+                transition: $transition-base;
+
+                &::placeholder{
+                    color: rgba($muted, 0.8);
+                }
+
+                &:hover{
+                    background-color: lighten($info, 1%);
+                }
+
+                &:focus{
+                    background-color: lighten($info, 1%);
+                }
+            }
+
+            
+            button[type='submit']{
+                border-bottom: 4px solid rgba($muted, 0.1);
+                &:focus{
+                    outline: none !important;
+                    box-shadow: none;
+                }
+                background-color: $info;
+                padding: 10px 20px;
+                color: $dark;
+                border: 0;
+                font-size: 12px;
+                letter-spacing: 2px;
+                border-radius: 50px;
+                transition: $transition-base;
+                cursor: pointer;
+
+                &::placeholder{
+                    color: $muted;
+                }
+                background-color: $danger;
+                
+                &:hover{
+                    background: none;
+                    background-color: #ff3950 !important;
+                }
+            }
+        }
+    }
+}
+
+#a_two{
+    padding: 4rem 0;
+
+    .twoer{
+        position: relative;
+
+    }
+    .liner{
+        border-right: 2px solid $danger;
+        border-top-right-radius: 60px;
+    }
+    .two-top{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        letter-spacing: 2px;
+        border-radius: 50px;
+        border-bottom-right-radius: 0;
+
+        .tri{
+            position: absolute;
+            transform: rotate(90deg);
+            bottom: -2px;
+            right: -5px;
+            width: 0; 
+            height: 0; 
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            
+            border-top: 10px solid $danger;
+        }
+    }
+
+    .eh-items{
+        position: relative;
+        padding: 30px 0;
+        .texter{
+            position: relative;
+            .ma-icon{
+                width: 20px;
+                height: 20px;
+                background-color:red;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                right: calc(-3rem - 10px);
+            }
+            &_{
+                .ma-icon{
+                    left: calc(-100% - 9rem - 13px) !important;
+                }
+            }
+        }
+        .item-data{
+            // position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+
+            .icon-cont{
+                width: 60px;
+                height: 60px;
+            }
+            .txt{
+                letter-spacing: 2px;
+                font-weight: 700;
+            }
+        }
+    }
+}

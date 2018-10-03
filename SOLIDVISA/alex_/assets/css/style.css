@@ -1,0 +1,150 @@
+.grad-red {
+  background-color: #ff434b;
+  background: linear-gradient(0deg, #ff434b 0%, #ff3b5f 100%); }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+a {
+  text-decoration: none !important; }
+
+.ral {
+  font-family: Raleway,sans-serif; }
+
+.open {
+  font-family: 'Open Sans', sans-serif; }
+
+.lie {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+#navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: 0.5s; }
+  #navigation.scrolled {
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.05); }
+  #navigation #mail .material-icons {
+    font-size: 16px; }
+  #navigation #mail .contact {
+    color: #676c75;
+    transition: 0.5s; }
+    #navigation #mail .contact:hover {
+      color: #ff434b; }
+
+input:focus, button:focus, a:focus {
+  outline: none !important; }
+
+#main #a_one {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+
+.top-title {
+  letter-spacing: 2px;
+  font-size: 18px; }
+.top-form .input-group {
+  padding: 4px 0; }
+  .top-form .input-group._ib {
+    border-bottom: 4px solid rgba(103, 108, 117, 0.1);
+    padding-bottom: 0;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 50px; }
+  .top-form .input-group > input {
+    background-color: #f7f8fb;
+    padding: 10px 20px;
+    color: #343a40;
+    border: 0;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    border-bottom: 4px solid rgba(103, 108, 117, 0.1);
+    transition: all 0.2s ease-in-out; }
+    .top-form .input-group > input:focus {
+      outline: none !important;
+      box-shadow: none; }
+    .top-form .input-group > input::placeholder {
+      color: rgba(103, 108, 117, 0.8); }
+    .top-form .input-group > input:hover {
+      background-color: #fafbfd; }
+    .top-form .input-group > input:focus {
+      background-color: #fafbfd; }
+  .top-form .input-group button[type='submit'] {
+    border-bottom: 4px solid rgba(103, 108, 117, 0.1);
+    background-color: #f7f8fb;
+    padding: 10px 20px;
+    color: #343a40;
+    border: 0;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    background-color: #ff434b; }
+    .top-form .input-group button[type='submit']:focus {
+      outline: none !important;
+      box-shadow: none; }
+    .top-form .input-group button[type='submit']::placeholder {
+      color: #676c75; }
+    .top-form .input-group button[type='submit']:hover {
+      background: none;
+      background-color: #ff3950 !important; }
+
+#a_two {
+  padding: 4rem 0; }
+  #a_two .twoer {
+    position: relative; }
+  #a_two .liner {
+    border-right: 2px solid #ff434b;
+    border-top-right-radius: 60px; }
+  #a_two .two-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    border-bottom-right-radius: 0; }
+    #a_two .two-top .tri {
+      position: absolute;
+      transform: rotate(90deg);
+      bottom: -2px;
+      right: -5px;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #ff434b; }
+  #a_two .eh-items {
+    position: relative;
+    padding: 30px 0; }
+    #a_two .eh-items .texter {
+      position: relative; }
+      #a_two .eh-items .texter .ma-icon {
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: calc(-3rem - 10px); }
+      #a_two .eh-items .texter_ .ma-icon {
+        left: calc(-100% - 9rem - 13px) !important; }
+    #a_two .eh-items .item-data {
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0; }
+      #a_two .eh-items .item-data .icon-cont {
+        width: 60px;
+        height: 60px; }
+      #a_two .eh-items .item-data .txt {
+        letter-spacing: 2px;
+        font-weight: 700; }
+
+/*# sourceMappingURL=style.css.map */
